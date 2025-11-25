@@ -20,42 +20,92 @@ Select TWO Additional Features to Add
 <head>
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
-  <style>
-.flip-card {
-  background-color: transparent;
-  width: 500px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+ <style>
+        body{
+            background-color:rgb(0, 0, 0);
+            color: white 
+        }
+        p {
+            color: rgb(0, 0, 0);
+            font-size:small;
+            font-style:italic;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        h3 {
+            color: rgb(0, 0, 0) ;
+            padding-left: 10px;
+        }
+        .flip-card{
+            width: 640px;
+            height: 720px;
+            border: 1px transparent;
+            perspective: 1000px;
+             display: flex;
+            justify-content: space-around;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+                transition-delay: .2s;
+                transition: all 0.6s ease-in-out, height 0s;
+                z-index: 100;
+                -webkit-transform-style: preserve-3d;
+                -moz-transform-style: preserve-3d;
+                -ms-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                transform: rotateY(-180deg) ;      
+        }
+        .flip-card-front {
+            background-image: url(hi.png);
+            background-size: 200%;
+            position:absolute;
+            width: 500px;
+            height: 300px;
+            -webkit-backface-visibility:hidden;
+            backface-visibility: hidden;  
+            color:rgb(0, 0, 0);
+        }
+        .flip-card-back {
+           position:absolute;
+            width: 500px;
+            height: 300px;
+            -webkit-backface-visibility:hidden;
+            backface-visibility: hidden;
+            background-color:bisque;
+            color:rgb(0, 0, 0);
+            transform: rotatey(180deg);
+        }
+        #tooclose{
+          padding: 10px;
+          align-items: center;
+        }
+        .bonheur-royale-regular {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
 }
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.flip-card:hover, .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-}
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
--webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.flip-card-back {
-  background-color:bisque;
-  color: rgb(0, 0, 0);
-  transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+.ohnooo {
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size:x-large;
+  color:rgb(75, 21, 21)
 }
   </style>
 </head>
@@ -63,13 +113,14 @@ Select TWO Additional Features to Add
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://stardate.org/wp-content/uploads/2016/02/Whirlpool.jpg" alt="allofreality" style="width:300px;height:300px;">
+      <img src="https://stardate.org/wp-content/uploads/2016/02/Whirlpool.jpg" alt="allofreality" style="width:500px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>The Great Archmage God, Paronin Of The Bladed Wind, welcomes you to his tri-annual gala...</h1>
-      <p>Next saturday evening at the grand palace.</p>
-      <p>Formal wear only.</p>
-<p><span class="ohnooo">Additional guests are always welcome.</span></p>
+      <div id="tooclose">
+      <h1 class="bonheur-royale-regular"><strong>The Great Archmage God, Paronin Of The Bladed Wind, welcomes you to his tri-annual gala...</strong></h1>
+   <p class="bonheur-royale-regular">Next saturday evening at the grand palace.</p>
+      <p class="bonheur-royale-regular">Formal wear only.</p>
+<p><span class="ohnooo"><em>Additional guests are always welcome.</em></span></div></p>
     </div>
   </div>
 </div>
