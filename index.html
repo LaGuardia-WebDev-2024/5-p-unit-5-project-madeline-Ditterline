@@ -1,7 +1,7 @@
 <!-- Unit 5 Project
 Requirements
 [yes] <div> and <span>
-[  ] border:, margin:, and padding: 
+[yes] border:, margin:, and padding: 
 [  ] Three Images
 
 Select TWO Additional Features to Add  
@@ -27,11 +27,16 @@ Select TWO Additional Features to Add
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+ <background-image src="https://wallpapers.com/images/hd/dark-fantasy-wallpaper-5ydjjjj079xkwmp5.jpg">
+ </background-image>
  <style>
         body{
-            background-color:rgb(0, 0, 0);
-            color: white 
-        }
+            background-image: url(https://wallpapers.com/images/hd/dark-fantasy-wallpaper-5ydjjjj079xkwmp5.jpg);
+       background-repeat: no-repeat;
+       background-position: center center;
+       background-size:cover;
+       background-attachment: fixed;
+          }
         p {
             color: rgb(0, 0, 0);
             font-size:small;
@@ -51,7 +56,9 @@ Select TWO Additional Features to Add
             perspective: 1000px;
              display: flex;
             justify-content: space-around;
-            border:3px
+            border:3px;
+            margin: 300px;
+            margin-left: 650px;
         }
         .flip-card-inner {
             position: relative;
@@ -106,11 +113,26 @@ Select TWO Additional Features to Add
   font-weight: 200;
   font-style: normal;
   font-size:x-large;
-  color:rgb(75, 21, 21)
+  color:rgb(75, 21, 21);
+  overflow: hidden;
+  width: 0;
+  border-right: .15em; 
+display:inline-block;
+white-space: no-wrap;
+animation: typing 10s steps(32, end) forwards;
 }
+@keyframes typing {
+  from{width:0}
+  to{width:100%}
+}
+.pleasework{
+  display:inline-block;
+}
+
   </style>
 </head>
 <body>
+  <h1 class="ohnooo">testing testing 123</h1>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -121,8 +143,9 @@ Select TWO Additional Features to Add
       <h1 class="bonheur-royale-regular"><strong>The Great Archmage God, Paronin Of The Bladed Wind, welcomes you to his tri-annual gala...</strong></h1>
    <p class="bonheur-royale-regular">Next saturday evening at the grand palace.</p>
       <p class="bonheur-royale-regular">Formal wear only.</p>
-<p><span class="ohnooo"><em>Additional guests are always welcome.</em></span></div></p>
-    </div>
+<div class="pleasework"><p><div class="ohnooo"><em>Additional guests are always welcome.</em></div></p></div>
+</div>
+</div>
   </div>
 </div>
  
