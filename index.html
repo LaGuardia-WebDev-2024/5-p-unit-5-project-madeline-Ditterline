@@ -2,12 +2,12 @@
 Requirements
 [yes] <div> and <span>
 [yes] border:, margin:, and padding: 
-[  ] Three Images
+[yes] Three Images
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
 [yes] Feature 2 - Flip Card
-[ no ] Feature 3 - Animation
+[ yes ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
@@ -57,8 +57,10 @@ Select TWO Additional Features to Add
              display: flex;
             justify-content: space-around;
             border:3px;
-            margin: 300px;
+            margin-right: 300px;
             margin-left: 650px;
+            margin-bottom: 250px;
+            margin-top:100px;
         }
         .flip-card-inner {
             position: relative;
@@ -115,15 +117,16 @@ Select TWO Additional Features to Add
   font-size:x-large;
   color:rgb(75, 21, 21);
   overflow: hidden;
-  width: 0;
-  border-right: .15em; 
-display:inline-block;
+  width: 0; 
 white-space: no-wrap;
-animation: typing 10s steps(32, end) forwards;
+animation: typing 8s steps(32, end) forwards;
+position:absolute;
+align-content: center;
+align-items: center;
 }
 @keyframes typing {
   from{width:0}
-  to{width:100%}
+  to{width:50%}
 }
 .pleasework{
   display:inline-block;
@@ -132,7 +135,7 @@ animation: typing 10s steps(32, end) forwards;
   </style>
 </head>
 <body>
-  <h1 class="ohnooo">testing testing 123</h1>
+<img src="https://thumbs.dreamstime.com/b/melted-wax-stamp-dark-red-envelope-black-background-close-view-melted-wax-stamp-dark-red-envelope-against-416183169.jpg" width="200">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
